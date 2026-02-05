@@ -2,13 +2,14 @@
   --bg0:#071a33;
   --bg1:#0b2b57;
   --bg2:#0f3a73;
-  --card:#0a2346cc;
-  --stroke:#ffffff22;
+  --card:rgba(7, 22, 44, .78);
+  --stroke:rgba(255,255,255,.18);
   --text:#eaf2ff;
-  --muted:#b9c9e6;
+  --accent2:#2d79ff;
+  --muted: #c9d8f2;
   --accent:#58b7ff;
   --accent2:#2d79ff;
-  --shadow: 0 18px 55px rgba(0,0,0,.35);
+  --shadow: 0 18px 55px rgba(0,0,0,.45);
   --radius: 18px;
 }
 
@@ -518,4 +519,18 @@ h1{
   .steps{ grid-template-columns: 1fr; }
   .hero__stats{ grid-template-columns: 1fr; }
   .footer__inner{ flex-direction:column; }
+}
+
+
+.stat,
+.tcard,
+.kpi,
+.step,
+.gitem{
+  background: var(--card) !important;
+  border-color: var(--stroke) !important;
+}
+
+.header{
+  background: rgba(6,22,44,.78) !important;
 }
